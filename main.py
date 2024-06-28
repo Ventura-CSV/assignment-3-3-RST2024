@@ -8,7 +8,7 @@ def main():
     result = True
     if email[0].isalpha() == False:
         result = False
-    elif len(email) <= 5 and len(email) >= 30:
+    elif len(email) <= 5 or len(email) >= 30:
         result = False
     elif '@' not in email:
         result = False
